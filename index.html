@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SunDiary Lite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>☀️ SunDiary – Mood Tracker</h1>
+
+  <p id="today-date" style="font-weight: bold;">📅 Today is: ...</p>
+
+  <form id="diary-form">
+    <label>Select your mood:</label>
+    <select id="emotion" required>
+      <option value="">-- Choose mood --</option>
+      <option value="happy">😊 Happy</option>
+      <option value="neutral">😐 Neutral</option>
+      <option value="angry">😡 Angry</option>
+    </select><br />
+
+    <label>Note:</label>
+    <input type="text" id="note" placeholder="A short reflection..." />
+    <button type="submit">Save</button>
+  </form>
+
+  <h2>📘 Mood entries this month:</h2>
+  <ul id="entry-list"></ul>
+
+  <div id="summary"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
